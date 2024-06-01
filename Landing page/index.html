@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopnest</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="index.js"></script>
+  </head>
+  <body>
+    <div class="hero">
+      <div class="nav1">
+        <div class="empty"></div>
+        <div class="name"><img class="logo" src="photos/logo.jpeg" alt="Logo"><h1>ShopNest</h1></div>
+        <div class="account">
+            <svg width="25px" height="25px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" >
+
+                <path d="M0 0h48v48H0z" fill="none"/>
+                <g id="Shopicon">
+                    <path d="M33.843,26.914L24,36l-9.843-9.086C8.674,30.421,5,36.749,5,44h38C43,36.749,39.326,30.421,33.843,26.914z"/>
+                    <path d="M24,28c3.55,0,6.729-1.55,8.926-4C34.831,21.876,36,19.078,36,16c0-6.627-5.373-12-12-12S12,9.373,12,16
+                        c0,3.078,1.169,5.876,3.074,8C17.271,26.45,20.45,28,24,28z"/>
+                </g>
+                </svg>
+                <h4 class="acc_text"><a id="mn" href="#">Account</a></h4>
+                <svg width="25px" height="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <h4><a id="mn" href="#">Shopping</a></h4>
+        </div>
+      </div>
+      <div class="nav2">
+        <nav class="menu">
+            <ul>
+              <li class="dropdown">
+                <a class="jew" href="#">Jewelleries & Accessories &#9662;</a>
+                <div class="dropdown-content">
+                  <a class="dmenu" href="#">Earrings</a>
+                  <a class="dmenu" href="#">Necklace</a>
+                  <a class="dmenu" href="#">Rings</a>
+                  <a class="dmenu" href="#">Artificial Jewelleries</a>
+                  <a class="dmenu" href="#">Pendant</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a class="jew" href="#">Clothing & Shoes &#9662;</a>
+                <div class="dropdown-content">
+                  <a class="dmenu" href="#">All</a>
+                  <a class="dmenu" href="#">T-Shirt</a>
+                  <a class="dmenu" href="#">Shirt</a>
+                  <a class="dmenu" href="#">Kid's Collections</a>
+                  <a class="dmenu" href="#">Women's Collections</a>
+                  <a class="dmenu" href="#">Men's Collections</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a class="jew" href="#">Home & Living &#9662;</a>
+                <div class="dropdown-content">
+                  <a class="dmenu" href="#">Furnishing</a>
+                  <a class="dmenu" href="#">Home Decor</a>
+                  <a class="dmenu" href="#">Home Lightning</a>
+                  <a class="dmenu" href="#">Kitchenware</a>
+                  <a class="dmenu" href="#">Dinning</a>
+                  <a class="dmenu" href="#">Living Room</a>
+                  <a class="dmenu" href="#">Office Room</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a class="jew" href="#">Books &#9662;</a>
+                <div class="dropdown-content">
+                  <a class="dmenu" href="#">All</a>
+                  <a class="dmenu" href="#">Story Books</a>
+                  <a class="dmenu" href="#">Comic Books</a>
+                  <a class="dmenu" href="#">Autobiography</a>
+                  <a class="dmenu" href="#">Competitive Exam Books</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a  class="jew" href="#">Toys & Entertainment &#9662;</a>
+                <div class="dropdown-content">
+                  <a href="#">All</a>
+                  <a href="#">Toys</a>
+                  <a href="#">Soft Toys</a>
+                  <a href="#">Teddy</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a class="jew" href="#">Electronics &#9662;</a>
+                <div class="dropdown-content">
+                  <a class="dmenu" href="#">Laptop</a>
+                  <a class="dmenu" href="#">Headphones</a>
+                  <a class="dmenu" href="#">Camera</a>
+                  <a class="dmenu" href="#">Printers</a>
+                  <a class="dmenu" href="#">Washing Machine</a>
+                  <a class="dmenu" href="#">Refrigerators</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a class="jew" href="#">Mobiles &#9662;</a>
+                <div class="dropdown-content">
+                  <a class="dmenu" href="#">Mi</a>
+                  <a class="dmenu" href="#">Apple</a>
+                  <a class="dmenu" href="#">Samsung</a>
+                  <a class="dmenu" href="#">Oppo</a>
+                  <a class="dmenu" href="#">Realme</a>
+                  <a class="dmenu" href="#">Vivo</a>
+                </div>
+              </li>
+              <div class="search">
+                <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 17c1.71 0 3.287-.573 4.55-1.537l4.743 4.744a1 1 0 0 0 1.414-1.414l-4.744-4.744A7.5 7.5 0 1 0 9.5 17zM15 9.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" fill="#000000"/></svg>
+        <input type="search" name="search_bar" id="search_box" placeholder="Search Shopnest....">
+            </div>
+            </ul>
+            
+          </nav>
+      </div>
+      <div class="slider-container">
+        <div class="slider-control left inactive"></div>
+        <div class="slider-control right"></div>
+        <ul class="slider-pagi"></ul>
+        <div class="slider">
+          <div class="slide slide-0 active">
+            <div class="slide__bg"></div>
+            <div class="slide__content">
+              <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+              </svg>
+              <div class="slide__text">
+                <h2 class="slide__text-heading" style="font-family: 'Roboto', sans-serif;">Mobiles</h2>
+                <p class="slide__text-desc" style="font-family: 'Roboto', sans-serif;"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam quibusdam soluta laborum et doloremque, harum nulla maiores iste, molestias minus maxime laudantium porro delectus, quis aliquid saepe ratione sunt quas! </p>
+                <a class="slide__text-link" style="font-family: 'Roboto', sans-serif;">Shop Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="slide slide-1 ">
+            <div class="slide__bg"></div>
+            <div class="slide__content">
+              <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+              </svg>
+              <div class="slide__text">
+                <h2 class="slide__text-heading" style="font-family: 'Roboto', sans-serif;">Collections</h2>
+                <p class="slide__text-desc" style="font-family: 'Roboto', sans-serif;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus totam fugit, accusantium distinctio quibusdam voluptate, eos velit ad hic magnam non odio facere in. Magnam enim quidem cum distinctio quasi! </p>
+                <a class="slide__text-link" style="font-family: 'Roboto', sans-serif;">Shop Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="slide slide-2">
+            <div class="slide__bg"></div>
+            <div class="slide__content">
+              <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+              </svg>
+              <div class="slide__text">
+                <h2 class="slide__text-heading" style="font-family: 'Roboto', sans-serif;">Your One- Stop Electronic Market</h2>
+                <p class="slide__text-desc" style="font-family: 'Roboto', sans-serif;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, officiis et obcaecati eligendi error reiciendis voluptatem illum incidunt, laboriosam voluptas possimus repellat ducimus blanditiis nam voluptatibus, inventore sunt alias cum..</p>
+                <a class="slide__text-link" style="font-family: 'Roboto', sans-serif;">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+    <div class="hot-category">
+      <h3>Popular Brands</h3>
+
+      <div class="brand">
+        <a href="https://www.samsung.com/in/" target="_blank"><img src="/photos/samsung.png" alt="Samsung" class="brand_logo"></a>
+        <a href="https://www.apple.com/in/" target="_blank"><img src="photos/apple.png" alt="apple"class="brand_logo"></a>
+        <a href="https://www.vivo.com/in"target="_blank"><img src="photos/vivo.png" alt="Vivo"class="brand_logo"></a>
+        <a href="https://www.lg.com/in/"target="_blank"><img src="photos/lg.png" alt="Lg"class="brand_logo"></a>
+        <a href="https://www.hp.com/in-en/home.html" target="_blank"><img src="photos/hp.png" alt="Hp"class="brand_logo"></a>
+        <a href="https://www.mi.com/in/" target="_blank"><img src="photos/mi.png" alt="Mi" class="brand_logo"></a>
+        <a href="https://www.realme.com/in/" target="_blank"><img src="photos/realme.png" alt="Realme"class="brand_logo"></a>
+
+        <a href="https://in.canon/en/consumer" target="_blank"><img src="photos/Canon.png" alt="Canon" class="brand_logo"></a>
+        <a href="https://www.whirlpoolindia.com/" target="_blank"><img src="photos/whirlpool.png" alt="Whirlpool" class="brand_logo"></a>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3">
+          <div class="dress-card">
+            <div class="dress-card-head">
+              <img class="dress-card-img-top" src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7578935/2018/10/23/d7b740bc-e00e-4bec-97aa-65016f8ff2e71540289479612-Harpa-Women-Dresses-2331540289479465-1.jpg" alt="">
+              <div class="surprise-bubble"><span class="dress-card-heart">
+                  <i class="fas fa-heart"></i>
+                </span><a href="#"> <span></span></a></div>
+            </div>
+            <div class="dress-card-body">
+              <h4 class="dress-card-title">Harpa</h4>
+              <p class="dress-card-para">Womans printed clothing</p>
+              <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60% OFF)</span></p>
+              <div class="row">
+                <div class="col-md-6 card-button"><a href="">
+                    <div class="card-button-inner bag-button">Add to Bag</div>
+                  </a></div>
+                <div class="col-md-6 card-button"><a href="">
+                    <div class="card-button-inner wish-button">Whishlist</div>
+                  </a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="dress-card">
+            <div class="dress-card-head">
+              <img class="dress-card-img-top" src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/6625378/2018/6/5/fcec8d8e-4253-4fa4-ae6e-c6805b3b8fd31528183265021-na-2331528183264786-1.jpg" alt="">
+              <div class="surprise-bubble"><span class="dress-card-heart">
+                  <i class="fas fa-heart"></i>
+                </span><a href="#"> <span></span></a></div>
+            </div>
+            <div class="dress-card-body">
+              <h4 class="dress-card-title">Harpa</h4>
+              <p class="dress-card-para">Womans printed clothing</p>
+              <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60% OFF)</span></p>
+              <div class="row">
+                <div class="col-md-6 card-button"><a href="">
+                    <div class="card-button-inner bag-button">Add to Bag</div>
+                  </a></div>
+                <div class="col-md-6 card-button"><a href="">
+                    <div class="card-button-inner wish-button">Whishlist</div>
+                  </a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="dress-card">
+            <div class="dress-card-head">
+              <img class="dress-card-img-top" src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7578929/2018/10/23/86988cdc-cbe3-4b13-93f9-b37ad571b4761540274855321-Harpa-Women-Dresses-9171540274855158-1.jpg" alt="">
+              <div class="surprise-bubble"><span class="dress-card-heart">
+                  <i class="fas fa-heart"></i>
+                </span><a href="#"> <span></span></a></div>
+            </div>
+            <div class="dress-card-body">
+              <h4 class="dress-card-title">Harpa</h4>
+              <p class="dress-card-para">Womans printed clothing</p>
+              <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60% OFF)</span></p>
+              <div class="row">
+                <div class="col-md-6 card-button"><a href="">
+                    <div class="card-button-inner bag-button">Add to Bag</div>
+                  </a></div>
+                <div class="col-md-6 card-button"><a href="">
+                    <div class="card-button-inner wish-button">Whishlist</div>
+                  </a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="dress-card">
+            <div class="dress-card-head">
+              <img class="dress-card-img-top" src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7578940/2018/10/23/fe701151-69e6-4e20-9e2a-ace63081a8e11540282217137-Harpa-Women-Dresses-191540282216937-5.jpg" alt="">
+              <div class="surprise-bubble"><span class="dress-card-heart">
+                  <i class="fas fa-heart"></i>
+                </span><a href="#"> <span></span></a></div>
+            </div>
+            <div class="dress-card-body">
+              <h4 class="dress-card-title">Harpa</h4>
+              <p class="dress-card-para">Womans printed clothing</p>
+              <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60% OFF)</span></p>
+              <div class="row">
+                <div class="col-md-6 card-button"><a href="">
+                    <div class="card-button-inner bag-button">Add to Bag</div>
+                  </a></div>
+                <div class="col-md-6 card-button"><a href="">
+                    <div class="card-button-inner wish-button">Whishlist</div>
+                  </a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+    <div id="banner" class="section-m1">
+      <h4> Exclusive Sale</h4>
+      <h2>Up to <span>70% off </span> - All Tshirts and Accessories</h2>
+      <button class="btn normal">Explore more</button>
+    </div>
+    <div class="product_store">
+        <div class="store">
+          <h3>Mobiles</h3>
+          <div class="upper">
+            <div class="pro2">
+              <img src="https://images.unsplash.com/photo-1587204714992-2c93329aaa3a?q=80&w=1938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+              <h1>Iphones</h1>
+              <p>Min. 30% off</p>
+            </div>
+            <div class="pro2">
+              <img src="https://images.unsplash.com/photo-1587204714992-2c93329aaa3a?q=80&w=1938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+              <h1>Iphones</h1>
+              <p>Min. 30% off</p>
+            </div>
+          </div>
+          <div class="lower">
+            <div class="pro2">
+              <img src="https://images.unsplash.com/photo-1587204714992-2c93329aaa3a?q=80&w=1938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+              <h1>Iphones</h1>
+              <p>Min. 30% off</p>
+            </div>
+            <div class="pro2">
+              <img src="https://images.unsplash.com/photo-1587204714992-2c93329aaa3a?q=80&w=1938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+              <h1>Iphones</h1>
+              <p>Min. 30% off</p>
+            </div>
+          </div>
+        </div>
+        <div class="store">
+          <h3>Festive Specials,For You</h3>
+          <div class="upper">
+            <div class="pro2">
+              <img src="https://images.unsplash.com/photo-1587204714992-2c93329aaa3a?q=80&w=1938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+              <h1>Iphones</h1>
+              <p>Min. 30% off</p>
+            </div>
+            <div class="pro2">
+              <img src="https://images.unsplash.com/photo-1587204714992-2c93329aaa3a?q=80&w=1938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+              <h1>Iphones</h1>
+              <p>Min. 30% off</p>
+            </div>
+
+          </div>
+          <div class="lower">
+            <div class="pro2">
+              <img src="https://images.unsplash.com/photo-1587204714992-2c93329aaa3a?q=80&w=1938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+              <h1>Iphones</h1>
+              <p>Min. 30% off</p>
+            </div>
+            <div class="pro2">
+              <img src="https://images.unsplash.com/photo-1587204714992-2c93329aaa3a?q=80&w=1938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+              <h1>Iphones</h1>
+              <p>Min. 30% off</p>
+            </div>
+          </div>
+        </div>
+        <div class="store">
+          <h3>Latest Styles</h3>
+          <div class="upper">
+            <div class="pro2">
+              <img src="https://images.unsplash.com/photo-1587204714992-2c93329aaa3a?q=80&w=1938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+              <h1>Iphones</h1>
+              <p>Min. 30% off</p>
+            </div>
+            <div class="pro2">
+              <img src="https://images.unsplash.com/photo-1587204714992-2c93329aaa3a?q=80&w=1938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+              <h1>Iphones</h1>
+              <p>Min. 30% off</p>
+            </div>
+          </div>
+          <div class="lower">
+            <div class="pro2">
+              <img src="https://images.unsplash.com/photo-1587204714992-2c93329aaa3a?q=80&w=1938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+              <h1>Iphones</h1>
+              <p>Min. 30% off</p>
+            </div>
+            <div class="pro2">
+              <img src="https://images.unsplash.com/photo-1587204714992-2c93329aaa3a?q=80&w=1938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+              <h1>Iphones</h1>
+              <p>Min. 30% off</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="brand-banner" id="brand">
+      <div class="layout">
+        <h3>Zara</h3>
+        <h2>Latest Trends <span>Latest Collections</span> - Discover Your Choice</h2>
+        <button class="shop">Shop Now</button>
+      </div> 
+    </div>
+    <h3>Best Seller</h3>
+    <div class="best-seller">
+        <div class="bs1"> <img src="https://images.unsplash.com/photo-1617493255060-2745a8c22ebf?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+          <h1>Earrings</h1>
+          <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60% OFF)</span></p>
+        </div>
+        <div class="bs1">
+          <img src="https://images.unsplash.com/photo-1617493255060-2745a8c22ebf?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+          <h1>Earrings</h1>
+          <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60% OFF)</span></p>
+        </div>
+        <div class="bs1">
+          <img src="https://images.unsplash.com/photo-1617493255060-2745a8c22ebf?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+          <h1>Earrings</h1>
+          <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60% OFF)</span></p>
+        </div>
+        <div class="bs1">
+          <img src="https://images.unsplash.com/photo-1617493255060-2745a8c22ebf?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+          <h1>Earrings</h1>
+          <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60% OFF)</span></p>
+        </div>
+        <div class="bs1">
+          <img src="https://images.unsplash.com/photo-1617493255060-2745a8c22ebf?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+          <h1>Earrings</h1>
+          <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60% OFF)</span></p>
+        </div>
+    </div>
+    <h3>Top Deals</h3>
+    <div class="best-seller">
+      <div class="bs1"> <img src="https://images.unsplash.com/photo-1617493255060-2745a8c22ebf?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        <h1>Home essentials</h1>
+        <p class="dress-card-para"><span class="dress-card-off">&ensp; Upto 60% OFF</span></p>
+      </div>
+      <div class="bs1">
+        <img src="https://images.unsplash.com/photo-1617493255060-2745a8c22ebf?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        <h1>Kitchen</h1>
+        <p class="dress-card-para"><span class="dress-card-off">&ensp;Upto 60% OFF</span></p>
+      </div>
+      <div class="bs1">
+        <img src="https://images.unsplash.com/photo-1617493255060-2745a8c22ebf?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        <h1>Sports &Toys</h1>
+        <p class="dress-card-para"><span class="dress-card-off">&ensp;Upto 60% OFF</span></p>
+      </div>
+      <div class="bs1">
+        <img src="https://images.unsplash.com/photo-1617493255060-2745a8c22ebf?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        <h1>Electronics</h1>
+        <p class="dress-card-para"><span class="dress-card-off">&ensp;Upto 60% OFF</span></p>
+      </div>
+      <div class="bs1">
+        <img src="https://images.unsplash.com/photo-1617493255060-2745a8c22ebf?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+         <h1>Jewelleries</h1>
+        <p class="dress-card-para"><span class="dress-card-off">&ensp;Upto 60% OFF</span></p>
+      </div>
+  </div>
+  <section class="bg-img text-center">
+    <div class="container">
+      <h2>
+        <strong>Subscribe</strong>
+      </h2>
+      <h6 class="font-alt">Get weekly top new offers delivered to your email</h6>
+      <br><br>
+      <form class="form-subscribe" action="#">
+        <div class="input-group">
+          <input type="text" class="form-control input-lg" placeholder="Your eamil address">
+          <span class="input-group-btn">
+            <button class="btn btn-success btn-lg" type="submit">Subscribe</button>
+          </span>
+        </div>
+      </form>
+    </div>
+  </section>
+<div class="footer">
+      <div class="footer-container">
+          <div class="content_1">
+              <h1>ShopNest</h1>
+              <p>The customer is at the heart of our<br>unique business model, which includes<br>design.</p>
+              <img src="https://i.postimg.cc/Nj9dgJ98/cards.png" alt="cards">
+          </div>
+          <div class="content_2">
+              <h4>SHOPPING</h4>
+              <a href="#sellers">Clothing Store</a>
+              <a href="#sellers">Trending Shoes</a>
+              <a href="#sellers">Accessories</a>
+              <a href="#sellers">Sale</a>
+          </div>
+          <div class="content_3">
+              <h4>SHOPPING</h4>
+              <a href="/">Contact Us</a>
+              <a href="/" target="_blank">Payment Method</a>
+              <a href="/" target="_blank">Delivery</a>
+              <a href="/" target="_blank">Return and Exchange</a>
+          </div>
+          <div class="content_4">
+              <h4>NEWSLETTER</h4>
+              <p>Be the first to know about new<br>arrivals, look books, sales & promos!</p>
+              <div class="f-mail">
+                  <input type="email" placeholder="Your Email">
+                  <i class='bx bx-envelope'></i>
+              </div>
+              <hr>
+          </div>
+      </div>
+      <div class="f-design">
+          <div class="f-design-txt container">
+              <p>Design and Code by Souvik Makur</p>
+          </div>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
