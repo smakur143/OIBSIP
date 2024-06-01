@@ -9,9 +9,6 @@ Welcome to the Temperature Converter project! This application allows users to i
 - "Convert" button to trigger the temperature conversion
 - Display area for showing the converted temperature with the correct unit
 
-## Live Demo
-
-You can see the live version of the calculator [here](https://souvik-calculator.vercel.app/).
 
 ## Usage
 
@@ -23,4 +20,7 @@ You can see the live version of the calculator [here](https://souvik-calculator.
 
 
 ## Project Structure
+temperature-converter/
+│
+├── index.html # The main HTML file for the temperature converter
 
